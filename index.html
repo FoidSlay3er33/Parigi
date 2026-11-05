@@ -1,128 +1,238 @@
-
 <!DOCTYPE html>
 <html lang="it">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <title>Guida Turistica: Parigi</title>
-</head>
-<style>
-    body {
-    font-family: Arial, sans-serif;
-    margin: 25px;
-    background-color: #f8f9fa;
-    color: #003366;
-}
-.main{
-    background-color: rgba(79, 131, 205, 0.1);
-}
-#titolo-citta {
-    color: #003366;
-    text-align: center;
-    border-bottom: 3px solid #003366;
-    padding-bottom: 10px;
-    transition: 0.3s;
-}
-#titolo-citta:hover {
-    color: #0055aa;
-    letter-spacing: 2px;
-}
-.intro {
-    font-size: 18px;
-    font-style: italic;
-    color: #333333;
-    line-height: 1.6;
-    transition: 0.3s;
-}
-.intro:hover {
-    color: #0055aa;
-    transform: translateX(5px);
-}
-ul {
-    background-color: #ffffff;
-    border-left: 4px solid #003366;
-    padding: 15px 30px;
-    transition: 0.3s;
-}
-ul:hover {
-    box-shadow: 0 4px 12px #cccccc;
-}
-li {
-    margin-bottom: 8px;
-    color: #0055aa;
-    transition: 0.3s;
-}
-li:hover {
-    color: #003366;
-    transform: translateX(10px);
-    cursor: pointer;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-    background-color: #ffffff;
-    transition: 0.3s;
-}
-table:hover {
-    box-shadow: 0 4px 12px #cccccc;
-}
-th, td {
-    border: 1px solid #cccccc;
-    padding: 10px;
-    text-align: left;
-}
-th {
-    background-color: #003366;
-    color: white;
-}
-tr {
-    transition: 0.3s;
-}
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Conference 2026</title>
+  </head>
+  <body>
 
-tr:hover {
-    background-color: #e6f0ff;
-    transform: scale(1.01);
-}
-</style>
-<body>
-<div class="main">
-    <h1 id="titolo-citta">Guida Turistica: Parigi</h1>
+<!-- =========================================================
+ STUDENTE: Medici Bryan
+ CLASSE: 4BS
+ LARGHEZZA CARD: 300px + (6 * 10px) = 360px
+ ========================================================= -->
 
-    <p class="intro">
-        Parigi è la capitale della Francia, famosa nel mondo
-        per i suoi monumenti storici, la cultura, la moda
-        e la raffinata gastronomia.
+
+<header>
+  <h1>Tech Conference 2026</h1>
+  <nav>
+    <ul>
+      <li><a href="#info">Info</a></li>
+      <li><a href="#programma">Programma</a></li>
+      <li><a href="#relatori">Relatori</a></li>
+      <li><a href="#iscrizione">Iscriviti</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <!-- SEZIONE INFORMAZIONI -->
+  <section id="info">
+    <div class="presentazione">
+      <p class="sopratitolo">TECH CONFERENCE 2026</p>
+      <h2>Sviluppo Web e Futuro Digitale</h2>
+      <p>
+        Una conferenza dedicata al web developing, HTML5, CSS, JS e molti altri
+      </p>
+      <a class="pulsante" href="#programma">
+        Scopri il programma
+      </a>
+    </div>
+
+    <div class="card-evento">
+      <span class="badge">ULTIMI POSTI</span>
+
+      <h2>Tech Conference 2026</h2>
+
+      <div class="locandina">
+        <span class="simbolo">&lt;/&gt;</span>
+        <h3>TECH CONF 2026</h3>
+        <p>WEB DESIGN E INNOVAZIONE</p>
+      </div>
+
+      <p>
+        Partecipa alla conferenza dedicata
+        allo sviluppo web e al futuro digitale.
+      </p>
+      <p><strong>Data:</strong> 20 Novembre 2026</p>
+      <p><strong>Luogo:</strong> Innovation Center</p>
+    </div>
+  </section>
+  <section id="programma">
+    <h2>Programma della Conferenza</h2>
+    <p class="sottotitolo">
+      Tre incontri per approfondire gli argomenti
+    </p>
+    <div class="contenitore">
+      <article class="box-programma">
+        <span class="orario">09:00 - 10:30</span>
+        <h3>HTML5 Semantico</h3>
+        <p>
+          Impara a costruire pagine web
+          ordinate, accessibili e professionali.
+        </p>
+      </article>
+      <article class="box-programma">
+        <span class="orario">11:00 - 12:30</span>
+        <h3>Box Model e Layout</h3>
+        <p>
+          Scopri margin, padding, border
+          e le tecniche per gestire gli spazi.
+        </p>
+      </article>
+      <article class="box-programma">
+        <span class="orario">14:00 - 15:30</span>
+        <h3>Posizionamento CSS</h3>
+        <p>
+          Utilizza position, z-index,
+          Flexbox e gli effetti hover.
+        </p>
+      </article>
+    </div>
+  </section>
+  <section id="relatori">
+    <h2>I Nostri Relatori</h2>
+    <p class="sottotitolo">
+      Esperti pronti a condividere le loro conoscenze
+    </p>
+    <div class="contenitore">
+      <article class="box-relatore">
+        <div class="avatar">LB</div>
+        <h3>Laura Bianchi</h3>
+        <p>Frontend Developer</p>
+        <span class="specializzazione">HTML5 e CSS3</span>
+      </article>
+      <article class="box-relatore">
+        <div class="avatar">MV</div>
+        <h3>Marco Vasta</h3>
+        <p>Web Designer</p>
+        <span class="specializzazione">UI / UX</span>
+      </article>
+      <article class="box-relatore">
+        <div class="avatar">PN</div>
+        <h3>Paolo Neri</h3>
+        <p>Tech Consultant</p>
+        <span class="specializzazione">Web Performance</span>
+      </article>
+    </div>
+  </section>
+  <section id="iscrizione">
+    <h2>Modulo di Registrazione</h2>
+    <p class="sottotitolo">
+      Compila il modulo per partecipare alla conferenza
+    </p>
+    <form action="#" method="post">
+
+      <fieldset>
+        <legend>Dati Personali</legend>
+        <label for="nome">Nome e Cognome:</label>
+        <input type="text" id="nome"
+               name="nome_completo"
+               placeholder="Es. Mario Rossi"
+               required>
+        <label for="email">Indirizzo Email:</label>
+        <input type="email" id="email"
+               name="email_utente"
+               placeholder="nome@esempio.it"
+               required>
+        <label for="pass">Password Account:</label>
+        <input type="password" id="pass"
+               name="password_utente"
+               minlength="8" required>
+      </fieldset>
+      <fieldset>
+        <legend>Dettagli Partecipazione</legend>
+        <label for="modalita">
+          Modalità di fruizione:
+        </label>
+
+        <select id="modalita" name="modalita_fruizione">
+          <option value="presenza">In Presenza</option>
+          <option value="online">Online Live</option>
+          <option value="registrazione">
+            Registrazione
+          </option>
+        </select>
+        <p class="domanda">Livello di esperienza:</p>
+        <div class="opzione">
+          <input type="radio" id="exp-base"
+                 name="livello_esperienza"
+                 value="base" checked>
+          <label for="exp-base">Principiante</label>
+        </div>
+        <div class="opzione">
+          <input type="radio" id="exp-intermedio"
+                 name="livello_esperienza"
+                 value="intermedio">
+          <label for="exp-intermedio">Intermedio</label>
+        </div>
+
+        <div class="opzione">
+          <input type="radio" id="exp-avanzato"
+                 name="livello_esperienza"
+                 value="avanzato">
+          <label for="exp-avanzato">Avanzato</label>
+        </div>
+
+        <label for="note">Note per i relatori:</label>
+        <textarea id="note" name="note_aggiuntive"
+                  rows="4"
+                  placeholder="Scrivi le tue domande..."></textarea>
+
+        <div class="opzione">
+          <input type="checkbox" id="privacy"
+                 name="accetto_privacy" required>
+          <label for="privacy">
+            Accetto l'informativa sulla privacy
+          </label>
+        </div>
+      </fieldset>
+      <div class="box-pulsanti">
+        <input type="submit" id="btn-invia"
+               name="btn_invia"
+               value="Conferma Iscrizione">
+        <input type="reset" id="btn-reset"
+               name="btn_reset"
+               value="Svuota Campi">
+      </div>
+    </form>
+  </section>
+  <section id="faq">
+    <h2>Domande Frequenti</h2>
+    <p class="sottotitolo">
+      Tutto quello che devi sapere sull'evento
     </p>
 
-    <h2>Principali Attrazioni</h2>
-
-    <ul>
-        <li>Torre Eiffel</li>
-        <li>Museo del Louvre</li>
-        <li>Cattedrale di Notre-Dame</li>
-        <li>Viale dei Campi Elisi</li>
-    </ul>
-
-    <h2>Dati Generali</h2>
-
-    <table>
-        <tr>
-            <th>Parametro</th>
-            <th>Valore</th>
-        </tr>
-        <tr>
-            <td>Capitale</td>
-            <td>Parigi</td>
-        </tr>
-        <tr>
-            <td>Popolazione</td>
-            <td>Circa 2,1 milioni di abitanti</td>
-        </tr>
-        <tr>
-            <td>Lingua</td>
-            <td>Francese</td>
-        </tr>
-    </table>
-</div>
-</body>
+    <details>
+      <summary>Chi può partecipare alla conferenza?</summary>
+      <p>
+        Tutti gli studenti e le persone che sono davvero interessate sull'argomento.
+      </p>
+    </details>
+    <details>
+      <summary>È possibile seguire l'evento online?</summary>
+      <p>
+        Sì, puoi selezionare la modalità
+        online nel modulo di iscrizione.
+      </p>
+    </details>
+    <details>
+      <summary>È necessario conoscere HTML e CSS?</summary>
+      <p>
+        No, La conferenza è adatta
+        sia ai principianti sia agli esperti.
+      </p>
+    </details>
+  </section>
+</main>
+<footer>
+  <p>Tech Conference 2026 | Progetto HTML5 e CSS3</p>
+  <p>Realizzato da Medici Bryan</p>
+  <a href="https://github.com/FoidSlay3er33" target="_blank">Github</a>
+</footer>
+  </body>
 </html>
